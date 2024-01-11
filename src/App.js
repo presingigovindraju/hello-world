@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App =()=>{
+
+    let a = 20;
+    let paraOne = {border:"2px solid gray"}
+
+    return (
+       <div className="hello">
+        <h1 style={{textAlign:"center",border:"2px solid green"}}>Hello World , {a}</h1>
+        <p style={paraOne}> the man</p>
+        <p> {1+2+3}</p>
+       </div>
+    )
 }
 
-export default App;
+export default App
